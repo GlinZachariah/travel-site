@@ -14,7 +14,7 @@ gulp.task('default',function(){
 gulp.task('style',function(){
 return gulp.src('./app/assets/css/main.css')
 	.pipe(postcss([gulpimport,nested,simplevars,autoprefix]))
-	.pipe(gulp.dest('./app/assets/temp'));
+	.pipe(gulp.dest('./app/temp'));
 });
 
 gulp.task('watch',function(){
